@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Max Minelli Trivia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="gamestylesheet.css" />
+  </head>
+
+  <body>
+    <!-------------- WELCOME SCREEN --------------->
+    <div class="screen" id="welcome-screen">
+      <h1>It's time to play the game!</h1>
+      <h4>How well do you know Max Minelli?.</h4>
+      <button class="start-btn">Start</button>
+    </div>
+
+    <!-------------- QUESTION SCREEN --------------->
+    <div class="screen" id="question-screen">
+      <h4 id="category">Category Name</h4>
+      <h1 id="question">Question goes here?</h1>
+      <div id="answer-set">
+        <button class="answer-btn" id="correctAnswer">Correct Answer</button>
+        <button class="answer-btn" id="incorrectAnswer1">Wrong Answer</button>
+        <button class="answer-btn" id="incorrectAnswer2">Wrong Answer</button>
+        <button class="answer-btn" id="incorrectAnswer3">Wrong Answer</button>
+      </div>
+      <h1 id="feedback">Feedback will go here.</h1>
+    </div>
+
+    <!-------------- THANK YOU SCREEN --------------->
+    <div class="screen" id="thankyou-screen">
+      <h1>Congratulations! You made it out the game. How well did you do?</h1>
+      <h4 id="game-results">Looks like you did pretty well.</h4>
+      <button class="start-btn">Play Again!</button>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-trivia/src/trivia.js"></script>
+    <!-- iDEW trivia -->
+
+    <script src="gameindex.js"></script>
+  </body>
+</html>
